@@ -1,0 +1,120 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2010-2011 Mark Liu (markwayneliu@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[20pt,a4paper,sans]{moderncv}
+
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage{xcolor}
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+
+% personal data
+\firstname{\huge Yogeshwar Dan}
+\familyname{\huge Charan(793/IT/12)}
+
+\address{21 B,DDA Flats,Pocket-1,Sector-7}{Dwarka,New Delhi-75}    % optional, remove the line if not wanted
+\mobile{9650182698}                    % optional, remove the line if not wanted
+\email{charanyogeshwar@gmail.com}                      % optional, remove the line if not wanted
+\homepage{www.compsciworld.wordpress.com}                % optional, remove the line if not wanted
+%\extrainfo{\url{http://markliu.me}} % optional, remove the line if not wanted
+%\photo[32pt][]{picture}  % Your photo (optional)
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+\cvline{2012--2016}{B.E.,Information Technology,{Netaji Subhas Institute of Technology,Delhi},{74.65\% at the end of five semesters}}{}{}{}{}
+
+\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+\cvline{2010--2011}{AISSCE/Class \RNum{12},CBSE, 88\% in (P/C/M) }{}{}{}{}
+
+\cvline{2008--2009}{AISCE/Class \RNum{10},CBSE, 85.06\%}{}{}{}{}  % arguments 3 to 6 can be left empty
+
+
+
+
+\section{Academic Achievements}
+
+\cvline{2012-Present}{{Among top 7 in department of 90,granted merit scholarship  for first and second year of college}}{}{}{}{
+}
+
+\cvline{2012}{{AIEEE Rank:5013 among more than 11,87,000 candidates,(top 4\% )}}{}{}{}{
+}
+
+\section{Technical Skills \& Courses}
+\cvline{Languages}{{Actively used :C,C++(STL)},Have used :Java,R,Python}
+\cvline{Courses}{
+ Algorithms,Data Structures,Database Systems, Operating Systems,Software Engineering }
+ 
+
+\section{Projects and Internship}
+\cventry{November,2015}{Hangperson Game using Sinatra,\href{https://damp-headland-4153.herokuapp.com/new}{\textit{(Heroku link)}}}{}{}{}{
+\begin{itemize}
+  \item Developed a Hangperson Game using Sinatra framework as a part of ongoing course on ESaaS.Developed using TDD methodology in Ruby and finally deployed on Heroku.
+\end{itemize}
+\item \textbf{Tools:}Ruby,Sinatra,Git,Heroku
+}
+
+\cventry{October,2015}{Webapp development,\href{}{\textit{Diabetronics}}}{Ongoing}{}{}{
+\begin{itemize}
+  \item Responsible for developing backend of web app.Handled tasks such as database schema design ,configuring RDS instance on AWS,developing business logic.
+\end{itemize}
+\item \textbf{Tools:}Ruby,Rails,AWS,Git,Bitbucket
+}
+
+\cventry{August,2015}{Research project on Wireless Sensor Networks,\href{https://github.com/charany1/Wireless-Sensor-Network-Project/blob/master/Synopsis.pdf}{\textit{(Synopsis link)}}}{Ongoing}{}{}{
+\begin{itemize}
+  \item Working on a project under Professor Samayveer Singh, to devise a protocol which improves energy efficiency in wireless sensor networks and hence improve overall network lifetime.Explored background work and reviewed literature  in this domain.We plan to use multi-level clustering along with randomization in Cluster Head Selection to reduce the average transmission cost per node per round.
+\end{itemize}
+}
+
+
+\cventry{Jun,2015}{Build automation using Gradle,\href{}{\textit{Evolphin Software,Inc}}}{Internship}{}{}{
+\begin{itemize}
+  \item Worked on automating the build process in coordination with the Adobe products plugin development team.Used \textbf{Gradle} to automate task of packaging and installation of plugin at the end of each new commit to code which made the process faster and easier for development team.
+  \item \textbf{Tools:}Gradle
+\end{itemize}
+}
+
+\cventry{Jan,2015}{E-mail subject classifier\href{https://github.com/charany1/Naive-Bayesian-Subject-Line-Classifier}{\textit{(Github Link)}}}{}{}{}{
+\begin{itemize}
+  \item Implemented an e-mail subject classifier based on Naive Bayes algorithm.Model was trained using a pre-classified training data set of e-mails to extract features such as frequency of occurence of word in subjects of e-mails of particular category(spam/non spam).Model was found to work with an accuracy of around 80\% to 90\% with training data set varying from 200 to 800 elements.
+  \item \textbf{Language used:}Python
+\end{itemize}
+}
+\cventry{Oct,2014}{Class room management system\href{https://github.com/charany1/Class-Room-Management-System}{\textit{(Github Link)}}}{}{}{}{
+\begin{itemize}
+  \item A command line based python program to demonstrate a Class Room Management System ,provides functionality to create ,view and delete student,subject,teacher and subject-teacher associationship ,can load and dump data in json format.
+  \item \textbf{Tools}:Python,Git,JSON
+\end{itemize}
+}
+
+\section{Extracurricular activities }
+\cvline{}{{Algorithmic programming contests(ACM ICPC 2014 Regional: 119/1500+ teams), Attending technical meetups, Technical blogging, Reading}}{}{}{}{
+}
+\end{document}
